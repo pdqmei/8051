@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/LEARN_8051/8051/ASM/INSTRUCTION",
-      "program": "d:/LEARN_8051/8051/ASM/INSTRUCTION/build/Debug/outDebug",
+      "cwd": "d:/LEARN_8051/8051/C/Basic/Uart_timer/counter",
+      "program": "d:/LEARN_8051/8051/C/Basic/Uart_timer/counter/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
