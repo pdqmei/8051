@@ -1,0 +1,24 @@
+;Sử dụng ngăt ngoài điều khiển port P1.1
+
+ORG 0000H
+JMP MAIN
+
+ORG 0003H
+JMP INT0_ISR
+
+ORG 0030H
+MAIN:
+SETB IT0
+SETB EX0
+SETB EA
+
+SETB P1.1
+
+LOOP:
+JMP LOOP
+
+INT0_ISR:
+CPL P1.1
+RETI
+
+END
