@@ -1,0 +1,23 @@
+;Tạo trễ 1ms bằng Timer 0 ở chế độ Mode 1, tần số thạch anh 12MHz
+
+ORG 0000H
+
+MAIN:
+
+LOOP:
+	CALL DELAY_1MS
+	JMP LOOP
+
+DELAY_1MS:
+	MOV TMOD, #01H
+	MOV TH0, #0FCH
+	MOV TL0, #18H
+	SETB TR0
+
+WAIT:
+	JNB TF0, WAIT
+	CLR TR0
+	CLR TF0
+	RET
+	
+END
