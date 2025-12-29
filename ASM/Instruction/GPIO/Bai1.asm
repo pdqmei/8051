@@ -1,7 +1,7 @@
-/*Chương trình này điều khiển LED nối với
-chân P1.1 của vi điều khiển 8051 nhấp nháy liên tục, 
-với khoảng thời gian bật và tắt cách nhau khoảng 200 ms.*/
-//chương trình ASM cho vi điều khiển 8051 viết bởi Bai1.asm
+;Chương trình này điều khiển LED nối với
+;chân P1.1 của vi điều khiển 8051 nhấp nháy liên tục, 
+;với khoảng thời gian bật và tắt cách nhau khoảng 200 ms.*/
+;chương trình ASM cho vi điều khiển 8051 viết bởi Bai1.asm
     
     LED1 EQU P1.1 
 	ORG 00H
